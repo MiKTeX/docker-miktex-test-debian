@@ -1,14 +1,14 @@
 FROM debian:latest
 
-LABEL Description="MiKTeX test environment, Debian latest" Vendor="Christian Schenk" Version="2.9.5703"
+LABEL Description="MiKTeX test environment, Debian latest" Vendor="Christian Schenk" Version="2.9.6703"
 
 RUN    apt-get update \
     && apt-get install -y --no-install-recommends \
            apt-transport-https \
            ca-certificates \
            cmake \
-	   dirmngr \
            curl \
+	   dirmngr \
            ghostscript \
            gnupg \
            gosu \
