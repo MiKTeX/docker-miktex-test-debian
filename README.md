@@ -1,4 +1,4 @@
-# Debian docker image with MiKTeX test environment
+# Debian 9 docker image with MiKTeX test environment
 
 ## Obtaining the image
 
