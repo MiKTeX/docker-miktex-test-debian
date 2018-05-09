@@ -4,11 +4,11 @@
 
 Get the latest image from the registry:
 
-    docker pull miktex/miktex-test-debian:latest
+    docker pull miktex/miktex-test-debian:stretch
 
 or build it yourself:
 
-    docker build --tag miktex/miktex-test-debian:latest .
+    docker build --tag miktex/miktex-test-debian:stretch .
 
 ## Using the image
 
@@ -35,7 +35,7 @@ Run the tests:
     git clone https://github.com/MiKTeX/miktex-testing ~/work/miktex/test-suite
     docker run --rm -t \
       -v ~/work/miktex/test-suite:/miktex/test-suite:ro \
-      -v ~/work/miktex/tests/debian-latest:/miktex/test:rw \
+      -v ~/work/miktex/tests/debian-stretch:/miktex/test:rw \
       -e USER_ID=`id -u` \
       -e GROUP_ID=`id -g` \
-      miktex/miktex-test-debian:latest
+      miktex/miktex-test-debian:stretch

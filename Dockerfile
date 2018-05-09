@@ -1,6 +1,6 @@
-FROM debian:latest
+FROM debian:stretch
 
-LABEL Description="MiKTeX test environment, Debian latest" Vendor="Christian Schenk" Version="2.9.5703"
+LABEL Description="MiKTeX test environment, Debian 9" Vendor="Christian Schenk" Version="2.9.5703"
 
 RUN    apt-get update \
     && apt-get install -y --no-install-recommends \
