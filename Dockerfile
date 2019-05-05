@@ -1,6 +1,6 @@
 FROM debian:buster
 
-LABEL Description="MiKTeX test environment, Debian latest" Vendor="Christian Schenk" Version="2.9.6704"
+LABEL Description="MiKTeX test environment, Debian latest" Vendor="Christian Schenk" Version="2.9.7064"
 
 RUN    apt-get update \
     && apt-get install -y --no-install-recommends \
