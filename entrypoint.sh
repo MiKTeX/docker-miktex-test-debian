@@ -1,7 +1,7 @@
 #!/bin/sh -e
 
-apt-get update
-apt-get dist-upgrade
+apt-get -y update
+apt-get -y dist-upgrade
 
 if [ -d /miktex/build ]; then
     apt -y install /miktex/build/*.deb
