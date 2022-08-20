@@ -1,20 +1,21 @@
-FROM debian:buster
+FROM debian:bullseye
 
-LABEL Description="MiKTeX test environment, Debian 10 (Buster)" Vendor="Christian Schenk" Version="21.11"
+LABEL Description="MiKTeX test environment, Debian 11 (Bullseye)" Vendor="Christian Schenk" Version="22.8.20"
 
-RUN    apt-get update \
-    && apt-get install -y --no-install-recommends \
-           apt-transport-https \
-           ca-certificates \
-           cmake \
-           curl \
-	   dirmngr \
-           ghostscript \
-           gnupg \
-           gosu \
-           make \
-           unzip \
-           zip
+RUN \
+    apt-get update; \
+    apt-get install -y --no-install-recommends \
+        apt-transport-https \
+        ca-certificates \
+        cmake \
+        curl \
+	    dirmngr \
+        ghostscript \
+        gnupg \
+        gosu \
+        make \
+        unzip \
+        zip
 
 RUN mkdir /miktex
 WORKDIR /miktex
