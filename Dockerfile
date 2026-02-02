@@ -1,6 +1,6 @@
-FROM debian:bookworm
+FROM debian:trixie
 
-LABEL Description="MiKTeX test environment, Debian 12 (bookworm)" Vendor="Christian Schenk" Version="23.10.03"
+LABEL Description="MiKTeX test environment, Debian 13 (trixie)" Vendor="Christian Schenk" Version="26.2.2"
 
 RUN \
     apt-get update; \

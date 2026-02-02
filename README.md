@@ -1,14 +1,14 @@
-# Debian 12 docker image with MiKTeX test environment
+# Debian 13 docker image with MiKTeX test environment
 
 ## Obtaining the image
 
 Get the latest image from the registry:
 
-    docker pull miktex/miktex-test-debian:bookworm
+    docker pull miktex/miktex-test-debian:trixie
 
 or build it yourself:
 
-    docker build --tag miktex/miktex-test-debian:bookworm .
+    docker build --tag miktex/miktex-test-debian:trixie .
 
 ## Using the image
 
@@ -35,7 +35,7 @@ Run the tests:
     git clone https://github.com/MiKTeX/miktex-testing ~/work/miktex/test-suite
     docker run --rm -t \
       -v ~/work/miktex/test-suite:/miktex/test-suite:ro \
-      -v ~/work/miktex/tests/debian-bookworm:/miktex/test:rw \
+      -v ~/work/miktex/tests/debian-trixie:/miktex/test:rw \
       -e USER_ID=`id -u` \
       -e GROUP_ID=`id -g` \
-      miktex/miktex-test-debian:bookworm
+      miktex/miktex-test-debian:trixie
