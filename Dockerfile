@@ -1,6 +1,6 @@
 FROM debian:trixie
 
-LABEL Description="MiKTeX test environment, Debian 13 (trixie)" Vendor="Christian Schenk" Version="26.2.2"
+LABEL Description="MiKTeX test environment, Debian 13 (trixie)" Vendor="Christian Schenk" Version="26.11.16"
 
 RUN \
     apt-get update; \
